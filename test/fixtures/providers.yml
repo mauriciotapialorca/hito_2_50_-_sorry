@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number_provider: 1
+  description: MyString
+  number_medicine: MyString
+
+two:
+  number_provider: 1
+  description: MyString
+  number_medicine: MyString

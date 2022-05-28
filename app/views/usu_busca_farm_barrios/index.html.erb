@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Usu busca farm barrios</h1>
+
+<div id="usu_busca_farm_barrios">
+  <% @usu_busca_farm_barrios.each do |usu_busca_farm_barrio| %>
+    <%= render usu_busca_farm_barrio %>
+    <p>
+      <%= link_to "Show this usu busca farm barrio", usu_busca_farm_barrio %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New usu busca farm barrio", new_usu_busca_farm_barrio_path %>

@@ -1,0 +1,32 @@
+<%= form_with(model: usu_busca_farm_barrio) do |form| %>
+  <% if usu_busca_farm_barrio.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(usu_busca_farm_barrio.errors.count, "error") %> prohibited this usu_busca_farm_barrio from being saved:</h2>
+
+      <ul>
+        <% usu_busca_farm_barrio.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :login, style: "display: block" %>
+    <%= form.text_field :login %>
+  </div>
+
+  <div>
+    <%= form.label :password, style: "display: block" %>
+    <%= form.text_field :password %>
+  </div>
+
+  <div>
+    <%= form.label :number_medicine, style: "display: block" %>
+    <%= form.text_field :number_medicine %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

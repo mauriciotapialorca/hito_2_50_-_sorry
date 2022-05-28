@@ -1,0 +1,67 @@
+<%= form_with(model: laboratory_22) do |form| %>
+  <% if laboratory_22.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(laboratory_22.errors.count, "error") %> prohibited this laboratory_22 from being saved:</h2>
+
+      <ul>
+        <% laboratory_22.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :number_laboratory, style: "display: block" %>
+    <%= form.number_field :number_laboratory %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.label :address, style: "display: block" %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div>
+    <%= form.label :pharmacy_of_brand, style: "display: block" %>
+    <%= form.text_field :pharmacy_of_brand %>
+  </div>
+
+  <div>
+    <%= form.label :distric, style: "display: block" %>
+    <%= form.text_field :distric %>
+  </div>
+
+  <div>
+    <%= form.label :region, style: "display: block" %>
+    <%= form.number_field :region %>
+  </div>
+
+  <div>
+    <%= form.label :hour_open, style: "display: block" %>
+    <%= form.text_field :hour_open %>
+  </div>
+
+  <div>
+    <%= form.label :hour_close, style: "display: block" %>
+    <%= form.text_field :hour_close %>
+  </div>
+
+  <div>
+    <%= form.label :phone, style: "display: block" %>
+    <%= form.number_field :phone %>
+  </div>
+
+  <div>
+    <%= form.label :number_medicine_isbn, style: "display: block" %>
+    <%= form.number_field :number_medicine_isbn %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

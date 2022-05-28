@@ -1,0 +1,2 @@
+class UsuBuscaFarmBarrio < ApplicationRecord
+end

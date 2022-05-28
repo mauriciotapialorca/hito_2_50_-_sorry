@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Codigo_Medicamento: 1
+  Descripcion: MyString
+  Stock_Inicial: 1
+  Stock_Final: 1
+  Precio_Bruto: 1
+  Precio_Neto: 1
+
+two:
+  Codigo_Medicamento: 1
+  Descripcion: MyString
+  Stock_Inicial: 1
+  Stock_Final: 1
+  Precio_Bruto: 1
+  Precio_Neto: 1
